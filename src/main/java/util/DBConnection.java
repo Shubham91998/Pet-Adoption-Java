@@ -14,8 +14,10 @@ public class DBConnection {
         try {
             return DriverManager.getConnection(URL, USER, PASSWORD);
         } catch (SQLException e) {
+            System.err.println("Failed to establish a database connection!");
             e.printStackTrace();
             return null;
         }
     }
+
 }

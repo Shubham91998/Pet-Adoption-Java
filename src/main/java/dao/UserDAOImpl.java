@@ -14,9 +14,13 @@ public class UserDAOImpl implements UserDAO {
     public boolean registerUser(User user) {
         String query = "INSERT INTO users (username, email, password, phone_number, address) VALUES (?, ?, ?, ?, ?)";
         
-        try (Connection con = DBConnection.getConnection(); 
-             PreparedStatement stmt = con.prepareStatement(query)) {
+        try (Connection con = DBConnection.getConnection()) {
+            if (con == null) {
+                System.err.println("Database connection failed!");
+                return false;
+            }
             
+            PreparedStatement stmt = con.prepareStatement(query);
             stmt.setString(1, user.getUsername());
             stmt.setString(2, user.getEmail());
             stmt.setString(3, user.getPassword());
@@ -29,6 +33,7 @@ public class UserDAOImpl implements UserDAO {
             e.printStackTrace();
             return false;
         }
+
     }
 
     // Validate login credentials

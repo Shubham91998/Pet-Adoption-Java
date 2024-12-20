@@ -1,6 +1,11 @@
 C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\model\Pet.java
 C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\service\PetService.java
+C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\dao\UserDAO.java
+C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\dao\UserDAOImpl.java
 C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\dao\PetDAO.java
 C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\dao\PetDAOImpl.java
+C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\servlet\LoginServlet.java
+C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\servlet\RegisterServlet.java
+C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\model\User.java
 C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\util\DBConnection.java
 C:\Users\Shubham kumar\eclipse-workspace\PetAdoption-java\src\main\java\App.java
