@@ -8,7 +8,11 @@
 </head>
 <body>
     <h1>Login Form</h1>
-    <form action="LoginServlet" method="post" onsubmit="return loginCheck()">
+    <!-- Display error message if exists -->
+    <c:if test="${not empty error}">
+        <div style="color: red;">${error}</div>
+    </c:if>
+    <form action="login" method="post" onsubmit="return loginCheck()">
       
 
       <p>
@@ -23,7 +27,7 @@
         <input type="password" id="password" name="password" placeholder="Enter your Password"/>
         <span id="password-error" class="error-message"></span>    
       </p>
-      <p class="reg"><a href="registration.html">Click here for Registration</a></p>
+      <p class="reg"><a href="register.jsp">Click here for Registration</a></p>
       <p>
         <input type="submit" value="submit" name="submit"/>
         <input type="reset" value="Reset" name="reset"/>

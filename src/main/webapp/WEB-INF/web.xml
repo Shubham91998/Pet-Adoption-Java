@@ -10,16 +10,6 @@
 
     <!-- Servlet Configuration -->
     <!-- MyServlet Configuration -->
-    <servlet>
-        <servlet-name>MyServlet</servlet-name>
-        <servlet-class>com.user.MyServlet</servlet-class>
-        <!-- Load-on-startup ensures this servlet is initialized during server startup -->
-        <load-on-startup>1</load-on-startup>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>MyServlet</servlet-name>
-        <url-pattern>/myServlet</url-pattern>
-    </servlet-mapping>
 
     <!-- RegisterServlet Configuration -->
     <servlet>
